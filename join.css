@@ -1,0 +1,142 @@
+/* Hero Section - Join Page */
+.hero-section-join {
+  background: url("images/join-bg.jpg") top center / cover no-repeat;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-section-join::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* dark overlay */
+  z-index: 1;
+}
+
+.hero-section-join .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section-join h1 {
+  color: #fff;
+}
+
+.hero-section-join h1 span {
+  color: #fcbf49;
+}
+
+.hero-section-join p {
+  color: #f1f1f1;
+  font-size: 1.1rem;
+}
+.hero-section-join .btn-warning {
+  background-color: #fcbf49;
+  border: none;
+  transition: all 0.3s ease;
+  color: #fff !important;
+}
+
+.hero-section-join .btn-warning:hover {
+  background-color: #f77f00;
+  color: #fff !important;
+}
+/* Join Options Section */
+.join-options {
+  background: #fff5f5;
+}
+
+.join-options h2 {
+  color: #d62828;
+}
+
+.option-card {
+  background-color: #fff;
+  border: 1px solid #f1c0c0;
+  transition: all 0.3s ease;
+}
+
+.option-card:hover {
+  background-color: #ffeaea;
+  transform: translateY(-5px);
+}
+
+.option-card i {
+  color: #d62828;
+}
+
+/* Modal Styling */
+.modal-content {
+  border: none;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.modal-content input,
+.modal-content textarea {
+  
+  border: 1px solid #f1c0c0;
+}
+
+.modal-content input:focus,
+.modal-content textarea:focus {
+  box-shadow: none;
+  border-color: #d62828;
+}
+
+.modal-content button {
+  background-color: #d62828;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.modal-content button:hover {
+  background-color: #b71c1c;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .option-card {
+    padding: 3rem 2rem;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .hero-section-join h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section-join p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section-join h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section-join p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section-join h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-section-join p {
+    font-size: 0.9rem;
+  }
+
+  .hero-section-join .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1.5rem;
+  }
+}

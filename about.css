@@ -1,0 +1,196 @@
+/* Hero Section - About Page */
+.hero-section-about {
+  background: url("images/about-bg.jpg") center center / cover no-repeat;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-section-about::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* dark overlay */
+}
+
+.hero-section-about .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section-about h1 {
+  color: #fff;
+}
+
+.hero-section-about h1 span {
+  color: #fcbf49; /* matches your theme accent */
+}
+
+.hero-section-about p {
+  color: #f1f1f1;
+  font-size: 1.1rem;
+}
+/* Our Story Section */
+.our-story {
+  background-color: #fff5f5;
+}
+
+.our-story h2 {
+  font-size: 2.2rem;
+}
+
+.story-images {
+  position: relative;
+  display: inline-block;
+}
+
+.story-images .big-circle {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.story-images .small-circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+  position: absolute;
+  bottom: 0;
+  right: -30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+/* Mission & Vision Section - Mild Theme */
+.mission-vision-section {
+  background-color: white; /* soft pale red background */
+}
+
+.mission-vision-section h2 {
+  color: #333;
+}
+
+.mission-vision-section h2 span {
+  color: #d62828; /* soft red accent */
+}
+
+.mission-vision-section .mission-box,
+.mission-vision-section .vision-box {
+  background-color: #ffffff;
+  border: 1px solid #f1c0c0;
+  transition: all 0.3s ease;
+}
+
+.mission-vision-section .mission-box:hover,
+.mission-vision-section .vision-box:hover {
+  background-color: #fff0f0;
+  transform: translateY(-5px);
+}
+
+/* Text adjustments */
+.mission-vision-section p {
+  line-height: 1.7;
+}
+/* Donate Now Section */
+.donate-section {
+  background: linear-gradient(135deg, #fff5f5, #ffeaea);
+  color: #333;
+}
+
+.donate-section h2 span {
+  color: #d62828;
+}
+
+.btn-donate {
+  background-color: #d62828;
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-donate:hover {
+  background-color: #b71c1c;
+  transform: scale(1.05);
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mission-vision-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .mission-vision-section p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .story-images .big-circle {
+    width: 240px;
+    height: 240px;
+  }
+
+  .story-images .small-circle {
+    width: 100px;
+    height: 100px;
+    right: -20px;
+  }
+
+  .our-story h2 {
+    font-size: 1.8rem;
+     text-align: center;
+  }
+}
+/* Responsive font size for About section paragraph */
+@media (max-width: 768px) {
+  .about-section p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section p {
+    font-size: 0.7rem;
+  }
+  
+}
+
+/* Responsive font size adjustments */
+@media (max-width: 992px) {
+  .hero-section-about h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section-about p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section-about h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section-about p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section-about h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-section-about p {
+    font-size: 0.9rem;
+  }
+}
+
