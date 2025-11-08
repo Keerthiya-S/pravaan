@@ -405,6 +405,9 @@ html, body {
     max-height: 300px;
     width: 100%;
   }
+  .about-section h2{
+    text-align: center;
+  }
 }
 
 /* Get Involved Section */
